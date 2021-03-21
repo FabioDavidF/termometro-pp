@@ -19,3 +19,8 @@ def pegarHora():
         minutos = '0'+ str(minutos)
     segundos = objeto.second
     return f'{horas}:{minutos}'
+
+def pegarSoHora():
+    objeto = datetime.now()
+    hora = objeto.hour
+    return hora
