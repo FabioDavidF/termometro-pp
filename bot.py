@@ -9,9 +9,9 @@ def criarTweet(temperature, description, date, condition):
     # Variantes de temperatura
     if int(temperature) > 32:
         temperature_variant = 'Tá calor pra caralho'
-    if 25 < int(temperature) < 32:
+    if 25 < int(temperature) <= 32:
         temperature_variant = 'Tá um calor suportável'
-    if 20 < int(temperature) < 25:
+    if 20 <= int(temperature) <= 25:
         temperature_variant = 'Tá fresquinho'
     if int(temperature) < 20:
         temperature_variant = 'TÁ FAZENDO FRIO EM PRUDENTE'
